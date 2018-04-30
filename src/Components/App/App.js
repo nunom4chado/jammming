@@ -26,7 +26,7 @@ class App extends Component {
       // maybe later add a notification informing this or remove the track from the searchResults
       console.log('This track is already on your playlist');
     } else {
-      let tracks = this.state.playlistTracks;
+      let tracks = this.state.playlistTracks.concat;
       tracks.push(track);
       this.setState({playlistTracks: tracks});
     }
